@@ -1,7 +1,7 @@
 # kubernetes
 kubernetes the easy way!
 ========================================================================================================================================
-INSTALLATION OF K8'S CLUSTER USING MINIKUBE
+## INSTALLATION OF K8'S CLUSTER USING MINIKUBE
 ========================================================================================================================================
 What you’ll need/Prerequisites:
 2 CPUs or more
@@ -27,7 +27,7 @@ minikube start
 AND BAM! IT'S UP AND RUNNING 
 
 =======================================================================================================================================
-INSTALLATION OF K8'S CLUSTER USING KUBEADM
+## INSTALLATION OF K8'S CLUSTER USING KUBEADM
 =======================================================================================================================================
 Prerequisites:
 1.Make an entry of each hosts in etc/hosts file  on all the nodes as well as configure it on DNS if you have DNS server.

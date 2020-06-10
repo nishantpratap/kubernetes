@@ -1,8 +1,6 @@
 # kubernetes
 kubernetes the easy way!
-========================================================================================================================================
-## INSTALLATION OF K8'S CLUSTER USING MINIKUBE
-========================================================================================================================================
+# # INSTALLATION OF K8'S CLUSTER USING MINIKUBE
 What you’ll need/Prerequisites:
 2 CPUs or more
 2GB of free memory
@@ -25,10 +23,7 @@ Now,
 start your cluster 
 minikube start
 AND BAM! IT'S UP AND RUNNING 
-
-=======================================================================================================================================
-## INSTALLATION OF K8'S CLUSTER USING KUBEADM
-=======================================================================================================================================
+# # INSTALLATION OF K8'S CLUSTER USING KUBEADM
 Prerequisites:
 1.Make an entry of each hosts in etc/hosts file  on all the nodes as well as configure it on DNS if you have DNS server.
 cat /etc/hosts
@@ -59,7 +54,6 @@ Now in action:
 1.Enable Kubernetes repository on master and all worker nodes
 create a repo file for kubernetes and add the lines given below.
 cat /etc/yum.repos.d/kubernetes.repo
-======================================================================================================================================
 [kubernetes]
 name=Kubernetes
 baseurl=https://packages.cloud.google.com/yum/repos/kubernetes-el7-x86_64
@@ -68,7 +62,6 @@ gpgcheck=1
 repo_gpgcheck=1
 gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg
         https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
-======================================================================================================================================
 2. install the required packages on master and all worker nodes.
 yum -y install docker kubeadm
 3.Start and enable docker and kubelet services on master and all worker nodes.
@@ -99,9 +92,6 @@ I0811 21:10:04.906058   12195 kernel_validator.go:96] Validating kernel config
 [kubelet] Writing kubelet configuration to file "/var/lib/kubelet/config.yaml"
 [preflight] Activating the kubelet service
 [certificates] Generated ca certificate and key.
-.........................................................................
-suppressed few messages
--------------------------------------------------------
 [bootstraptoken] creating the "cluster-info" ConfigMap in the "kube-public" namespace
 [addons] Applied essential addon: CoreDNS
 [addons] Applied essential addon: kube-proxy
